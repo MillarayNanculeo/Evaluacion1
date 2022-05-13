@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,700;8..144,800;8..144,900&display=swap" rel="stylesheet" />
+
+        <style>
+            body {
+                color: #545e58;
+                background: #eaeae2;
+                font-weight: 300;
+                font-family: "Source Serif Pro", serif;
+            }
+
+            header,
+            footer {
+                font-family: "Source Sans Pro", sans-serif;
+            }
+
+            header h1 {
+                font-size: 10rem;
+                font-weight: 700;
+                font-family: "Bebas Neue";
+                color: #dbae5c;
+                line-height: 1;
+            }
+            header h2 {
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 800;
+                line-height: 1;
+            }
+            header h3 {
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 800;
+            }
+            a {
+                color: rgba(39, 40, 35, 0.75);
+            }
+
+            a:hover {
+                color: rgba(201, 195, 179, 1);
+            }
+
+            header p a {
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            main p a {
+                text-decoration: underline;
+            }
+
+            p.primero {
+                font-size: 1em;
+            }
+
+            div.card {
+                background: #eae1d0;
+            }
+
+            img.card-img-top {
+                filter: grayscale(1) opacity(0.8);
+                transition: ease filter 0.5s;
+            }
+
+            img.card-img-top:hover {
+                filter: grayscale(0) opacity(1);
+                transition: ease filter 0.3s;
+            }
+
+            .bg-cierre {
+                background: #141421;
+            }
+            p {
+                font-family: "Roboto Flex", sans-serif;
+            }
+
+            figure h1 {
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 800;
+            }
+            span {
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 800;
+                color:#dbae5c;
+                font-size: 4em;
+
+            }
+            p.card {
+                background: #eae1d0;
+            }
+            
+            h4 {
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 800;
+            }
+
+
+        </style>
+        <title>Star Wars</title>
+    </head>
+    <body>
+        <header class="titular">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center align-self-end">
+                        <img src="img/svg.svg" class="mt-5 mb-4 w-100" />
+                        <h2>Curiosidades de</h2>
+                        <h1>STAR WARS</h1>
+                        <h3 class="fs-5 mb-5">Personajes de Otra Galaxia</h3>
+                        <p class="m-0">Por <a href="#">Javiera Millaray Silva Ñanculeo</a></p>
+                        <p class="small">PUBLICADO EL 12 DE MAYO, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-3 mx-auto ">
+                        <img src="img/bb8.gif">
+                    </div>
+                    <div class="col-md-6 mx-auto">
+ <!--Introducción-->
+                        <p class="primero">
+                            Star Wars es un universo de ficción derivado de una serie de películas ideadas principalmente por el cineasta George Lucas en los 70. La primera película fue lanzada en el año 1977 con el nombre de Star Wars. En
+                            ella vemos a una joven princesa Leia combatiendo al imperio, quienes con el poder destructor de planetas de la Estrella de la Muerte buscan cimentar su control sobre la galaxia. Mientras un granjero, llamado Luke
+                            Skylwalker se prepara para enfrentar nuevos desafios.
+                        </p>
+                        <p>
+                            Tras el éxito de esta película se lanzaron su segunda y tercera parte: El Imperio Contraataca (donde vemos a Yoda por primera vez) y El Regreso del Jedi. En 1981 se reestrena Star Wars en dónde se aprovechó para
+                            renombrarla como "Episodio IV: A New Hope". Así, se pasó a considerar como el cuarto capítulo de una serie a la que faltaban aún los tres primeros capítulos.
+                        </p>
+                        <p>
+                            Esto a la vez derivó en que las 11 películas no están estrenadas en orden cronológico. Pues el orden correcto es el siguiente:
+                        </p>
+                        
+                    </div>
+                    
+ <!--Orden cronológico-->
+                    <figure>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 mx-auto">
+                                    <h1 class="mt-5 text-center">Orden Cronológico: Películas</h1>
+                                    <div id="secuencia" class="m-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+ <!--GráficosZ-->
+
+                    <div class="container py-5">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <p> Además del contenido entregado en las películas, existen una variedad de series que amplian considerablemente la información sobre este universo.
+                                    Estas nos entregan información adicional acerca de los distintos planetas, especies y tecnologías existentes.
+                                    En la página web oficial de Star Wars: <a href="https://www.starwars.com/databank">StarWars.com</a> podemos encontrar información acerca de cada uno de estas especies, vehículos
+                                , droides, planetas, entre otros. Con estos datos podemos determinar que existen:</p> 
+                                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-3 g-3 text-center">
+                                    <p class="card shadow-sm align-items-center"> <span id="numero1"></span> especies distintas en todo el universo</p>
+                                    <p class="card shadow-sm align-items-center"> <span id="numero2"></span> tipos de droides distintos en todo el universo</p>
+                                    <p class="card shadow-sm align-items-center"> <span id="numero3"></span> tipos de naves y vehículos distintos en todo el universo</p>
+                                </div>
+                                    <p> Y así, la página web oficial nos entrega una base de daos costantemente actualizada y completa acerca de este enorme universo. 
+                                        Además de esta también existe Swapi. Esta es una API de Star Wars es una gran fuente de datos cuantificados y accesibles con datos
+                                        de 83 personajes de toda la serie.
+                                        Para obtener los siguientes gráficos usaremos los datos propocionados por la <a href="https://swapi.dev/">web oficial</a> de Swapi
+                                </p>
+
+                            </div>
+                        </div>
+<!--Especies-->
+                        <h4 class="mt-5 text-center fs-1">¿Los humanos son superiores?</h4>
+                    </div>
+                    <div class="col-md-10 mx-auto my-5 mt-1">
+                        <canvas id="primergrafico" width="400" height="200"></canvas>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                        <p>
+                            Con más de 83 especies era de esperar que la cantidad de personajes no humanos sea superior. Desde los datos de la web de swapi podemos extraer a 35 persoajes humanos y a 48 personajes 
+                            no humanos.
+                        </p>
+                    </div>
+                    <h4 class="mt-5 text-center fs-1 mb-5">Personajes Principales</h4>
+                    <div class="col-md-6 mx-auto">
+                    <p>
+                        Desde la web oficial de Star Wars es posible acceder a los datos específicos de cada personaje. 
+                        <br>
+                        Así podemos ver, por ejemplo, que R2-D2 es más alto de Yoda, que Qui-Gon Jinn aparece sólo en una película, porque (spoiler) muere en la primera, y que Darth Sidius 
+                       (también conocido como Palpatine) es definitivamente es un humano.
+                    </p>
+                    </div>
+
+                <div class="col-md-10 mx-auto my-5">
+
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aqui"></div>
+                </div>
+
+<!--Personajes-->
+
+
+                <h4 class="mt-5 text-center fs-1">Personajes nuevos por cada película</h4>
+                    <div class="col-md-10">
+                        <canvas id="segundografico" width="400" height="200"></canvas>
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <p>
+                           Podemos ver la película con menos personajes nuevos es el Regreso del Jedi, con tan sólo 3 personajes que no habían aparecido anteriormente (según la data de swapi).    
+                        </p>
+                        <br>
+
+<!--Fins-->
+                        <p>
+                            Así, durante 45 años este universo creado por George Lucas nos brinda un imaginario que sigue encantando tanto a niños como a adultos. Y este universo
+                            en donde el viaje interespacial, la comunicación con otras especies y civilizaciones ya es un hecho seguirá creciendo (porque no nos basta con los problemas de un sólo planeta).
+                        </p>
+
+                        <p class="small my-5">Este sitio fue desarrollado para el electivo de  
+                            <a href="https://github.com/profesorfaco/front-end">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a> "inspirado" en la página
+                             <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/">Analysing the volcanic lightning
+                                 from the Tonga eruption</a>, originalmente desarrollado para <a href="https://graphics.reuters.com/">Reuters Graphics</a> 
+                                 por Manas Sharma y Simon Scarr; Los estilos están resuletos con <a href="https://getbootstrap.com/">Bootstrap</a> y <a href="https://www.chartjs.org/">
+                                     Charts.js</a>, además de consultas al <a href="https://raw.githubusercontent.com/MillarayNanculeo/starwars/main/swapi.json">JSON de Swapi</a> y a un 
+                                     <a href="https://raw.githubusercontent.com/MillarayNanculeo/starwars/main/data.json">JSON con datos de la web oficial</a>.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-cierre">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col text-center"><small>Javiera Silva | 12 de mayo, 2022</small></div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+            integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+        <script>
+//linea de tiempo
+
+            var peliculas = [
+                { img: "https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Phantom-Menace-I-Poster_f5832812.jpeg?region=0%2C250%2C678%2C340", txt: "The Phantom Menace (1999)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Attack-Clones-II-Poster_53baa2e7.jpeg?region=0%2C188%2C678%2C340", txt: "Attack of The Clones (2002)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Revenge-Sith-III-Poster_646108ce.jpeg?region=0%2C356%2C746%2C374", txt: "Revenge of The Siths (2005)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/solo-a-star-wars-story-theatrical-poster-2_f4af9297.jpeg?region=0%2C397%2C1298%2C646&width=768", txt: "Solo: A Star Wars Story (2018)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/rogueone_onesheeta_8a255456.jpeg?region=0%2C77%2C1688%2C849&width=768", txt: "Rogue One: A Star Wars History (2016)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/Star-Wars-New-Hope-IV-Poster_c217085b.jpeg?region=40%2C219%2C586%2C293", txt: "A New Hope (1977)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Empire-Strikes-Back-V-Poster_878f7fce.jpeg?region=25%2C299%2C612%2C306", txt: "The Empire Strikes Back (1980)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/Star-Wars-Return-Jedi-VI-Poster_a10501d2.jpeg?region=9%2C210%2C624%2C312", txt: "Return Of The Jedi (1983)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/avco_payoff_1-sht_v7_lg_32e68793.jpeg?region=118%2C252%2C1384%2C696&width=600", txt: "The Force Awakens (2015)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/the-last-jedi-theatrical-poster-tall-a_6a776211.jpeg?region=0%2C53%2C1536%2C768&width=600", txt: "The Last Jedi (2017)" },
+                { img: "https://lumiere-a.akamaihd.net/v1/images/star-wars-the-rise-of-skywalker-theatrical-poster-1000_ebc74357.jpeg?region=1%2C318%2C999%2C499&width=600", txt: "The Rise of Skylwalker (2019)" },
+            ];
+
+            peliculas.forEach(function (p, i) {
+                if (i % 2 == 0) {
+                    document.getElementById("secuencia").innerHTML +=
+                        '<figure class="row d-flex align-items-center"><img src="' +
+                        p.img +
+                        '" class="img-fluid col-12 col-md-6" /><figcaption class="col-6 col-md-6"><p class="small py-2 text-center text-md-start fs-5">' +
+                        p.txt +
+                        "</p></figcaption></figure>";
+                } else {
+                    document.getElementById("secuencia").innerHTML +=
+                        '<figure class="row d-flex align-items-center"><img src="' +
+                        p.img +
+                        '" class="img-fluid col-12 col-md-6 order-md-2" /><figcaption class="col-12 col-md-6 order-md-1"><p class="small py-2 text-center text-md-end fs-5">' +
+                        p.txt +
+                        "</p></figcaption></figure>";
+                }
+            });
+
+//personajes
+            var data, personajes;
+            function preload() {
+                data = loadJSON("https://raw.githubusercontent.com/MillarayNanculeo/starwars/main/data.json");
+            }
+            function setup() {
+                noCanvas();
+                console.log(data);
+                personajes = Object.values(data);
+                console.log(personajes);
+                personajes.forEach((a) => {
+                    if (
+                        a.name.includes("R2-D2") ||
+                        a.name.includes("Obi-Wan Kenobi") ||
+                        a.name.includes("Padmé Amidala") ||
+                        a.name.includes("Palpatine") ||
+                        a.name.includes("Qui-Gon Jinn") ||
+                        a.name.includes("C-3PO") ||
+                        a.name.includes("Leia Organa") ||
+                        a.name.includes("Luke Skywalker") ||
+                        a.name.includes("Darth Maul") ||
+                        a.name.includes("Han Solo") ||
+                        a.name.includes("Yoda") ||
+                        a.name.includes("Darth Vader")
+                    )
+                        createElement("div", '<div class="card shadow-sm"><img class="card-img-top" src="' + a.img + '"><div class="card-body"><p class="card-text"><a href="' + a.link + '">' + a.name + "</a></p></div>")
+                            .class("col")
+                            .parent("aqui");
+                });
+                console.log(personajes);
+            }
+            todo().catch((error) => console.error(error));
+        </script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+            integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script>
+//el json de swapi
+            async function todo() {
+ //el fetch
+                const consulta = await fetch("https://raw.githubusercontent.com/MillarayNanculeo/starwars/main/swapi.json");
+                const data = await consulta.json();
+                console.log(data);
+
+//variables
+                //especies
+                var personajehumano = 0;
+                var personajenohumano = 0;
+
+                //género
+                var femenino = 0;
+                var masculino = 0;
+                var nn = 0;
+
+                //personajes por película
+                var episodio1 = 0;
+                var episodio2 = 0;
+                var episodio3 = 0;
+                var episodio4 = 0;
+                var episodio5 = 0;
+                var episodio6 = 0;
+
+                //personajes
+                var personajes1 = [];
+                var personajes2 = [];
+                var personajes3 = [];
+                var personajes4 = [];
+                var personajes5 = [];
+                var personajes6 = [];
+
+
+                var numeroespecies = 83;
+                var droides = 61;
+                var naves = 261;
+
+                document.querySelector("#numero1").innerHTML = numeroespecies;
+                document.querySelector("#numero2").innerHTML = droides;
+                document.querySelector("#numero3").innerHTML = naves;
+
+                //a ver qué pasa
+                data.forEach((d) => {
+                    if (d.species == "http://swapi.co/api/species/1/") {
+                        personajehumano = personajehumano + 1;
+                    } else {
+                        personajenohumano = personajenohumano + 1;
+                    }
+                    if (d.films.includes("http://swapi.co/api/films/1/") && d.species == "http://swapi.co/api/species/1/") {
+                        episodio1 = episodio1 + 1;
+                        personajes1.push(d.name);
+                    } else if (d.films.includes("http://swapi.co/api/films/2/") && d.species == "http://swapi.co/api/species/1/") {
+                        episodio2 = episodio2 + 1;
+                        personajes2.push(d.name);
+                    } else if (d.films.includes("http://swapi.co/api/films/3/") && d.species == "http://swapi.co/api/species/1/") {
+                        episodio3 = episodio3 + 1;
+                        personajes3.push(d.name);
+                    } else if (d.films.includes("http://swapi.co/api/films/4/") && d.species == "http://swapi.co/api/species/1/") {
+                        episodio4 = episodio4 + 1;
+                        personajes4.push(d.name);
+                    } else if (d.films.includes("http://swapi.co/api/films/5/") && d.species == "http://swapi.co/api/species/1/") {
+                        episodio5 = episodio5 + 1;
+                        personajes5.push(d.name);
+                    } else if (d.films.includes("http://swapi.co/api/films/6/") && d.species == "http://swapi.co/api/species/1/") {
+                        episodio6 = episodio6 + 1;
+                        personajes6.push(d.name);
+                    }
+                });
+
+ //consola
+                console.log(personajehumano);
+                console.log(personajenohumano);
+
+                console.log(episodio1);
+                console.log(episodio2);
+                console.log(episodio3);
+                console.log(episodio4);
+                console.log(episodio5);
+                console.log(episodio6);
+
+                //identificador
+
+//gráficos
+                new Chart(document.getElementById("primergrafico").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["humano", "nohumano"],
+                        datasets: [{ data: [personajehumano, personajenohumano], label: "Especie", backgroundColor: ["#5a807b", "#dbae5c"] }],
+                        clip: { left: 5, top: false, right: -2, bottom: 0 },
+                    },                    options: {
+                        indexAxis: "y",
+                    },
+                    
+                    
+                });
+
+                new Chart(document.getElementById("segundografico").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["A New Hope", "The Empire Strikes Back", "Return of the Jedi", "The Phantom Menace", "Attack of the Clones"],
+                        datasets: [{ data: [episodio1, episodio2, episodio3, episodio4, episodio5, episodio6], label: "Personajes", backgroundColor: ["#16232E", "#164C45", "#CC8D1A", "#E3C75F", "#BDA523"] }],
+                    },
+                    options: {
+                        indexAxis: "y",
+                    },
+                });
+
+ //fin
+            }
+            todo().catch((error) => console.error(error));
+        </script>
+    </body>
+</html>
